@@ -1,0 +1,47 @@
+{% load custom_filters %}
+<style>
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blogPostBlog {
+    height: 15rem;
+    margin: 2em 3rem;
+    width: 35%;
+    background-color: rgba(64, 216, 239, 0.696);
+  }
+  .blogPostBlog__meta h6 {
+    background-color: rgb(67, 63, 63);
+    color: aliceblue;
+    /* margin-left: 18rem; */
+    border-radius: 10px;
+    padding: 7px 3px;
+    /* width: 33%; */
+    text-align: right;
+  }
+</style>
+
+<div class="div">
+  {% for blog in blogposts %}
+
+  <a href="/">
+    <div class="blogPostBlog">
+      <div class="blogPostBlog__header">
+        <a href="{% url 'blog-user-profile' blog.author.id%}">
+          <div>@{{blog.author}}</div>
+        </a>
+        <p>{{blog.created|timesince}}</p>
+      </div>
+
+      <div class="blogPostBlog__content">
+        <a href=""> {{blog.name}} </a>
+        <p>{{blog.content|limit_characters:200}}</p>
+      </div>
+
+      <div class="blogPostBlog__meta">
+        <h6>{{blog.topic}}</h6>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>

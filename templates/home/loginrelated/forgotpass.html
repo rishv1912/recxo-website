@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Get your password </title>
+    <link rel="stylesheet" href="../static/css/loginform2.css" />
+  </head>
+  <body>
+    {% if messages %} {% for message in messages %}
+    <div
+      class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 "
+      role="alert"
+    >
+      <strong> {{ message }} </strong>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    {% endfor %} {% endif %}
+    <!-- <div class="name"><h1>recxo</h1></div> -->
+    <div class="login-section">
+      <div class="center">
+        <h1>recxo</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" required />
+            <span></span>
+            <label>email address</label>
+          </div>
+          <!-- <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Password</label>
+        </div> -->
+          <!-- <div class="pass">Forgot Password?</div> -->
+          <input type="submit" value="Send" />
+          <div class="signup_link">
+            Already a member? <a href="./loginform2.html">Login</a>
+          </div>
+        </form>
+      </div>
+      <div class="other-links">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/Services/Projects">Projects</a></li>
+          <li><a href="/About">About</a></li>
+          <li><a href="/Term_Condition">Terms & Conditions</a></li>
+          <li><a href="/Privacy_Policy">Privacy Policy </a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

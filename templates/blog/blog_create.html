@@ -1,0 +1,18 @@
+{% extends 'blog_base.html'%}
+{% block body%}
+
+
+{% for field in form %}
+{{form}}
+
+
+<label for=""></label>
+{{field.name}}
+{{field.author}}
+{{field.topic}}
+{{field.content}}
+
+{% endfor %}
+<a href="">Post</a>
+
+{% endblock body %}

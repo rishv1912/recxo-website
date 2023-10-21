@@ -1,0 +1,117 @@
+/* only nav bar and footer css will be written . Cause it is for base page */
+
+/* colors will be used white , black ,green ,#66FCF1
+
+white : whole website 
+black : text 
+green : button, highlighting and other 
+#55cb84: name and rarely
+*/
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&family=Oxygen:wght@300&family=Poppins&display=swap');
+
+/* font-family: 'Mulish', sans-serif;     used for NAME AND ETC ;
+font-family: 'Oxygen', sans-serif ;  EXPLATION AND INTRO;
+font-family: 'Poppins', sans-serif; QUESTION AND HIGHLIGHTING */
+
+/* image sources 
+undraw 
+humaaans 
+manypixels
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+body a {
+    text-decoration: none;
+}
+
+/* nav bar  starts*/
+
+/*responsive*/
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+/* 
+@media (max-width: 821px) {
+    .nav-items .nav-links .item {
+        display: none;
+    }
+
+    .nav-items .nav-links #item-dropdown {
+        display: none;
+    }
+
+    .nav-items #min-scrn-dropdown {
+        color: #fff;
+        display: inline-block;
+        position: relative;
+        right: 50%;
+        top: 50%;
+        visibility: visible;
+        margin: 0 5px;
+    }
+
+    .nav-items .dropdown-toggle {
+        position: relative;
+        top: 50%;
+
+    }
+
+} */
+
+
+/* faltu */
+/* .iMrZpd {
+    max-width: 115rem;
+    margin: 5rem auto 0px;
+    border-radius: 2.4rem;
+    padding: 3rem 6.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 4.5rem;
+}
+.cqOGbR {
+    max-width: 30rem;
+    width: 100%;
+    height: 36rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(144.83deg, rgb(16, 30, 38) 0%, rgb(18, 42, 39) 48.66%, rgb(17, 36, 38) 100%);
+    filter: drop-shadow(rgba(36, 166, 103, 0.1) 0px 6px 61px);
+    border-radius: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+} */
+
+
+
+
+
+
+/* ========= */

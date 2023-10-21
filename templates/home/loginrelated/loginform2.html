@@ -1,0 +1,65 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Recxo-login</title>
+    <link rel="stylesheet" href="../static/css/loginform2.css" />
+  </head>
+  <body>
+
+    {% if messages %} {% for message in messages %}
+    <div
+      class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 "
+      role="alert"
+    >
+      <strong> {{ message }} </strong>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    {% endfor %} {% endif %}
+    <div class="login-section">
+      <div class="center">
+        <h1>recxo</h1>
+        <form method="post" action="{% url 'login'%}">
+          {% csrf_token %}
+          <div class="txt_field">
+            <input type="text"  name="loginUsername" id="loginUsername" required />
+            <span></span>
+            <label>Username</label>
+          </div>
+          <div class="txt_field">
+            <input type="Password" name='loginPassword' id="loginUsername" required />
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="pass">
+            <a href="{% url 'forgotpass' %}">Forgot Password?</a>
+          </div>
+          <input type="submit" value="Login" />
+          <div class="signup_link">
+            Not a member? <a href="{% url 'signup'%}">Signup</a>
+          </div>
+        </form>
+      </div>
+      <div class="other-links">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="{% url 'projects'%}">Projects</a></li>
+          <li><a href="{% url 'about'%}">About</a></li>
+          <li><a href="{% url 'terms-conditions'%}">Terms & Conditions</a></li>
+          <li><a href="{% url 'privacy-policy'%}">Privacy Policy </a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

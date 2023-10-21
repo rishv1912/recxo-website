@@ -1,0 +1,182 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Recxo
+{% endblock title %} {% block link %} {% static 'style/index.css' %}{% endblock link %}
+ {% block body %} {% if messages %} {% for message in messages %}
+<div
+  class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 "
+  role="alert"
+>
+  <strong> {{ message }} </strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {% endif %}
+<div id="mainpage ">
+  <!-- section 1 starts here intro will be shown -->
+  <section class="section1">
+    <div class="sub-section1">
+      <div class="intro">
+        <h2>Welcome to <span style="color: #55cb84">recxo</span></h2>
+        <h3>Create <span class="auto-input" style="color: #55cb84"></span></h3>
+        <p>
+          Hi There, are you confused ? to build and expand your Business across
+          all over the world and want to create your own dream software . But
+          How ? Making your Business digitally can actually help you to get
+          recognition all over the world . So here we are to help you , by
+          making your dream Software to you .
+          <!-- <span style="font-family: 'Oxygen', sans-serif; color: black"><a href="./services.html">Read More</a></span> -->
+        </p>
+      </div>
+      <div class="home-img-1">
+        <img src="../static/illustrations/home-1.png" alt="" />
+      </div>
+    </div>
+    <div style="margin: 4rem;">
+      <h2 style="text-align: center; font-weight: 900;">
+        <a href="{% url 'orders'%}"> <span style="color:#55cb84; "> Get Started</span> </a>
+      </h2>
+    </div>
+  </section>
+  <!-- section 1 ends  -->
+
+  <!-- section 2 starts , here key features will be shown to undrestand the user -->
+
+  <h2
+    style="
+      text-align: center;
+      font-size: 60px;
+      font-family: 'Poppins', sans-serif;
+    "
+  >
+    Explore
+  </h2>
+  <div class="sc-jNJNQp iMrZpd">
+    <div
+      class="sc-hlLBRy cqOGbR"
+      style="transform: translateY(50px) translateZ(0px)"
+    >
+      <div
+        src="{% static 'illustrations/consultant-3.png' %}"
+        class="sc-eKJbhj c1-img-1"
+      ></div>
+      <div class="sc-bTTELM MmSvE">
+        <div class="sc-kImNAt kHFwZP">Personal Consultant</div>
+      </div>
+    </div>
+    <div
+      class="sc-hlLBRy cqOGbR"
+      style="transform: translateY(50px) translateZ(0px)"
+    >
+      <div
+        src="{% static 'illustrations/consultant-5.webp' %}"
+        class="sc-eKJbhj c1-img-2"
+      ></div>
+      <div class="sc-bTTELM MmSvE">
+        <div class="sc-kImNAt kHFwZP">Giving Your Touch</div>
+      </div>
+    </div>
+    <div
+      class="sc-hlLBRy cqOGbR"
+      style="transform: translateY(50px) translateZ(0px)"
+    >
+      <div
+        src="{% static 'illustrations/consultant-8.png' %}"
+        class="sc-eKJbhj c1-img-3"
+      ></div>
+      <div class="sc-bTTELM MmSvE">
+        <div class="sc-kImNAt kHFwZP">Weekly Updates</div>
+      </div>
+    </div>
+    <div
+      class="sc-hlLBRy cqOGbR"
+      style="transform: translateY(50px) translateZ(0px)"
+    >
+      <div class="sc-eKJbhj c1-img-4"></div>
+      <div class="sc-bTTELM MmSvE">
+        <div class="sc-kImNAt kHFwZP">Less Time</div>
+      </div>
+    </div>
+    <div
+      class="sc-hlLBRy cqOGbR"
+      style="transform: translateY(50px) translateZ(0px)"
+    >
+      <div
+        src="{% static 'illustrations/consultant-6.png' %}"
+        class="sc-eKJbhj c1-img-5"
+      ></div>
+      <div class="sc-bTTELM MmSvE">
+        <div class="sc-kImNAt kHFwZP">Profitable Payments</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section3">
+    <div class="explore">
+      <h1 class="sec2-intro">Softwares</h1>
+      <div class="cover-3">
+        <div class="box">
+          <img src="../static/img/application.webp" alt="Recxo" />
+          <h2>Applications</h2>
+          <p>
+            The App your are ordering will be for both iOS &amp; Android or as
+            per your choice and you will get full guidance in it !!
+          </p>
+          <!-- <div class="soft-ord"><a href="Orders/">Order</a></div> -->
+        </div>
+        <div class="box">
+          <img src="../static/img/website-illustration.webp" alt="" />
+          <h2>Websites</h2>
+          <p>
+            The Website your are ordering will be very dynamic,responsive &
+            interactive get full guidance in it by the experts of india !!
+          </p>
+          <!-- <div class="soft-ord"><a href="Orders/">Order</a></div> -->
+        </div>
+        <div class="box">
+          <img src="../static/img/computer-app-2.jpg" alt="" />
+          <!-- <img src="../static/img/computer-app.webp" alt=""> -->
+          <h2>Computer Softwares</h2>
+          <p>
+            The Software your are ordering will be Mac,Windows & Linux or as per
+            your choice and you will get full guidance in it !!
+          </p>
+          <!-- <div class="soft-ord"><a href="Orders/">Order</a></div> -->
+        </div>
+      </div>
+    </div>
+    <p class="explore-txt">
+      Make your dream happen with us , Recxo is the way where we create software
+      on your demand . We are a new idea . Okay ,think and tell us that how much
+      money is taken away from you to build a simple looking and performing
+      software ? a lot . After getting your software whether it is good or not,
+      you have to satisfy yourself .But from now There will be no any
+      dissappoinment cause here we come with a very effective solution .
+    </p>
+    <!-- section 2 ends  -->
+    <!-- section 3 starts , software ordering area in index or home page  -->
+  </section>
+
+  <!-- section 3 ends -->
+</div>
+<!-- this code is copied from github for the auto typing words in the starting of website -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- code for auto typing word -->
+<script>
+  var typed = new Typed(".auto-input", {
+    strings: [
+      "Websites",
+      "Apps",
+      "Personal Softwares",
+      "Android and iOS",
+      "AI/ML",
+    ],
+    typeSpeed: 50,
+    backSpeed: 20,
+    loop: true,
+  });
+</script>
+{% endblock body %}

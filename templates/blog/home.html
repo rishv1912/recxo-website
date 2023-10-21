@@ -1,0 +1,46 @@
+{% extends 'blog_base.html'%} {% block title%} blog{% endblock title%} 
+{% block body%}
+
+<style>
+  * {
+    text-align: center;
+  }
+
+
+  #section-1 .sub-section-1 {
+    display: flex;
+    max-width: 1450px;
+    margin: 0px auto;
+  }
+
+  #section-1 .box {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+  }
+
+  
+</style>
+
+<section id="section-1">
+  <div class="sub-section-1">
+    <div class="box">
+      <div class="blog_topic item">
+        {% include 'blog/topic_component.html'%}
+      </div>
+      <div class="blog_feed item">
+        <!-- <div class="blog__header">
+          <div>
+            <h2>Articles</h2>
+            <p>{{blogposts.count}}</p>
+          </div>
+
+        </div> -->
+
+        {% include 'blog/blog_feed_component.html'%}
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock body %}

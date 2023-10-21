@@ -1,0 +1,79 @@
+{% extends 'base.html' %} {% load static %} {% block link %}{% static 'css/orders.css' %}{% endblock link %} 
+{% block title %}Recxo - orders {% endblock title %} {% block body %}
+
+<!-- section 1 starts -->
+<section class="section-2">
+  {% if messages %} {% for message in messages %}
+  <div
+    class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 "
+    role="alert"
+  >
+    <strong> {{ message }} </strong>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+  {% endfor %} {% endif %}
+  <div class="sub-section2-1">
+    <h1 class="intro">order</h1>
+
+    <div class="order_layout">
+      <form action="" method="post" class="form">
+        {% csrf_token %}
+
+        <div class="form__group">
+          <label for="softName">Name</label>
+          <input type="text" name="softName" id="softName" />
+
+        </div>
+        
+        <div class="form__group">
+          <label for="software">softwares</label>
+          <input
+          type="text"
+          name="software"
+          id="software"
+          list="software-list"
+          />
+        </div>
+
+        <div class="form__group">
+          <label for="softAmount">Amount</label>
+          <input type="number" name="softAmount" id="softAmount" />
+        </div>
+        
+        <div class="form__group">
+          <label for="softDesc">Describe about your software</label>
+          <textarea name="softDesc" id="Desc" cols="30" rows="10" ></textarea>
+          
+        </div>
+
+        <div class="form__action">
+          <a class="btn btn--dark" href="{% url 'home' %}">Cancel</a>
+          <button class="btn btn--main" type="submit">Order</button>
+        </div>
+
+        <!-- <h2>
+          form 2
+        </h2>
+
+        
+        <div>
+          <label for="software_type">Software Type</label>
+          <input type="text" list="software-list" name="software">
+          <datalist id="software-list">
+            <select name="" id="software_type">
+              <option value="python">python</option>
+            </select>
+          </datalist>
+          {{form.soft_type}}
+        </div> -->
+      </form>
+    </div>
+  </div>
+</section>
+
+{% endblock body %}

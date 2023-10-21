@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block body %}
+<style></style>
+{% if messages %} {% for message in messages %}
+<div
+  class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 "
+  role="alert"
+>
+  <strong> {{ message }} </strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {% endif %}
+<div class="container">
+  <div class="layout_box">
+    <div class="layout_boxHeader">
+      <h3>Edit user profile</h3>
+    </div>
+    <div class="layout_body">
+        <form action="" method="post" class="">
+          {%csrf_token%} {% for field in form%}
+          
+          <div>
+            <label for="">{{field.label}} </label>
+          </div>
+          {{field}}
+    
+          {%endfor%}
+          
+        <div class="form__action">
+          <a class="btn btn--dark" href="{% url 'user-profile' request.user.id %}"
+          >Back</a
+          >
+          <a href="{% url 'user-profile' request.user.id %}">
+            <button class="btn btn--main" type="submit">Update</button>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</div>
+
+{% endblock body%}

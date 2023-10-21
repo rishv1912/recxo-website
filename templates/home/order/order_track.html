@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block link %}
+ {% endblock link %} {% block title %}Recxo - orders {% endblock title %} {% block body %}
+{% if messages %} {% for message in messages %}
+<div
+  class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 "
+  role="alert"
+>
+  <strong> {{ message }} </strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {% endif %}
+<h1>This is order tracing page</h1>
+
+{% endblock body %}

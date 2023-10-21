@@ -1,0 +1,142 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block title %}Get Job{% endblock title %} {% block link %}{% static 'style/job.css' %}{% endblock link %} {% block body %}
+
+
+<div class="signin-section">
+  {% if messages %} {% for message in messages %}
+  <div
+    class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 "
+    role="alert"
+  >
+    <strong> {{ message }} </strong>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+  {% endfor %} {% endif %}
+  <div class="center">
+    <!-- <a href="./index.html">Home</a> -->
+    <h1>Get Job</h1>
+    <form method="post" action="{% url 'getjob' %}">
+      {% csrf_token %}
+      <div class="txt_field">
+        <input type="text" name="name" required />
+        <span></span>
+        <label>your Name</label>
+      </div>
+      <div class="txt_field">
+        <input type="text" name="username" required />
+
+        <span></span>
+        <label>User Name</label>
+      </div>
+      <div class="txt_field">
+        <input type="number" name="phoneno" required />
+        <span></span>
+        <label>Phone no.</label>
+      </div>
+      <div class="txt_field">
+        <input type="email" name="email" required />
+        <span></span>
+        <label>email</label>
+      </div>
+      <div class="txt_field">
+        <input type="text" name="education" required />
+        <span></span>
+        <label>Education</label>
+      </div>
+      <div class="txt_field">
+        <input type="text" name="qualification" required />
+        <span></span>
+        <label>Qualification</label>
+      </div>
+      <div class="txt_field" id="worked_ever">
+        <div class="worked_ever">
+          <label for="ever_worked">Have you worked anywhere else </label>
+        </div>
+        <select name="worked_ever" id="ever_worked">
+          <option value="yes" selected>Yes</option>
+          <option value="no">No</option>
+        </select>
+        <span></span>
+      </div>
+      <div class="txt_field" id="status">
+        <label for="status">Your Status </label>
+        <select name="status" id="status">
+          <option value="emp" selected>Employee</option>
+          <option value="std">UG Student</option>
+          <!-- <option value="goolpixl"></option>
+          <option value="moto">Motorola</option>
+          <option value="son">Sony</option> -->
+          <option value="oth">Others</option>
+        </select>
+        <span></span>
+      </div>
+      <div class="txt_field">
+        <input type="text" name="address" required />
+        <span></span>
+        <label>Address</label>
+      </div>
+      <div class="txt_field" id="job_role">
+        <label for="jobrole">Job role</label>
+        <select name="jobrole" id="jobrole">
+          <option value="non" selected>none</option>
+          <option value="f-web-dev">Front-end Web developer</option>
+          <option value="b-web-dev">Back-end Web developer</option>
+          <option value="fs-web-dev">Full Stack Web developer</option>
+          <option value="f-and-dev">Front-end Android developer</option>
+          <option value="b-and-dev">Back-end Android developer</option>
+          <option value="f-ios-dev">Front-end iOS developer</option>
+          <option value="b-ios-dev">Back-end iOS developer</option>
+          <option value="data-sci">Data Scientist</option>
+          <option value="ml-eng">ML Engineer</option>
+          <option value="designer">UI/UX Designer</option>
+        </select>
+        <span></span>
+      </div>
+      <div class="txt_field">
+        <input type="text" name="skills" required />
+        <span></span>
+        <label>Your skills</label>
+      </div>
+      <!-- <div class="txt_field"> -->
+      <!-- <input class="file-input" type="file" required />
+        <span></span>
+        <label for="file-input">Your work and resume</label> -->
+      <!-- </div> -->
+      <!-- <div class="pass">Forgot Password?</div> -->
+      <!-- <div class="signup_link">
+          By Signing Up you will be our member , and agree to the
+          <a href="">Term,</a><a href="">Privacy Policy</a>
+          <a href="#">Signup</a>
+        </div> -->
+      <!-- <div class="signup_link">
+            Already a member? <a href="./loginform2.html">Log in</a>
+        </div> -->
+      <textarea
+        name="describe"
+        id="describe"
+        cols="30"
+        rows="10"
+        placeholder="explain about your self"
+      ></textarea>
+      <input type="submit" value="submit" />
+    </form>
+  </div>
+  <div class="other-links">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="{% url 'projects' %}">Projects</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'terms-conditions' %}">Terms &amp; Conditions</a></li>
+      <li><a href="{% url 'privacy-policy' %}">Privacy Policy </a></li>
+    </ul>
+  </div>
+</div>
+
+{% endblock body %}
