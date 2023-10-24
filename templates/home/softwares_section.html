@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% load static %} {% block link %} 
+{% static 'style/software_section.css' %} {% endblock link %} {% block title %}softwares{%endblock title %} {% block body %}
+
+<!-- main section -->
+<section id="section-parent">
+  <!-- website -->
+  <section class="section-child" id="section-1">
+    <h2>Getting Started with Website</h2>
+    <div class="box">
+
+        <div class="button">
+            <a href="{% url 'orders'%}">Start Building</a>
+        </div>
+    </div>
+  </section>
+
+  <!-- Application -->
+  <section class="section-child" id="section-2">
+    <h2>Getting started with Application</h2>
+    <div class="box">
+
+        <div class="button">
+            <a href="{% url 'orders'%}">Start Building</a>
+        </div>
+    </div>
+  </section>
+</section>
+
+{% endblock body %}

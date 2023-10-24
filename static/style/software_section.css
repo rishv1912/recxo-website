@@ -1,0 +1,38 @@
+.box {
+    width: 320px;
+    height: 335px;
+    border: 2px solid red;
+    text-align: center;
+    /* Optional, for centering content inside the box */
+    line-height: 100px;
+    /* Optional, for vertical centering of text */
+}
+
+
+section {
+    margin: 2rem 0;
+}
+
+#section-parent {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    /* Distribute space between the child elements */
+    width: 100%;
+}
+
+.section-child {
+    display: grid;
+    place-items: center;
+}
+
+.button {
+    background-color: #55cb84;
+    width: 6rem;
+}
+
+.button a{
+    color: white;
+    font-size: 80%;
+    font-weight: 900;
+}

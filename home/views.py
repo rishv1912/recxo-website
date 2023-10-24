@@ -102,6 +102,13 @@ def orderPayment(request):
 def orderPaymentProcess(request):
     pass
     
+def software_section(request):
+    return render(request,"home/softwares_section.html")
+
+
+
+
+
     
 # contact related
 

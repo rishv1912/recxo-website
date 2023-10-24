@@ -31,6 +31,11 @@ urlpatterns = [
     # profile related
     path("profile/<str:pk>", views.userProfile, name="user-profile"),
     path("update-user/<str:pk>", views.updateUserProfile, name="update-user"),
+    
+    
+    path("softwares/", views.software_section, name="softwaresSection"),
+
+
 
 
     # company related
