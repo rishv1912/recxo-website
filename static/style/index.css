@@ -254,7 +254,7 @@ body {
     background: url(../img/computer-app-2.jpg) 0% 0% / 100% no-repeat;
 }
 
-.section3 .cqOGbR {
+/* .section3 .cqOGbR {
     max-width: 22rem;
     width: 100%;
     height: 38rem;
@@ -267,7 +267,7 @@ body {
     -webkit-box-pack: justify;
     justify-content: space-between;
 
-}
+} */
 
 .section3 .explore {
     max-width: 1230px;
@@ -363,7 +363,7 @@ body {
 
 
 
-/* media queries of responsive */
+/*========================================== media queries of responsive ========================================== */
 /* layout */
 
 @media screen and (max-width:320px) {
