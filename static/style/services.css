@@ -59,13 +59,11 @@ body {
 }
 
 .other-links {
-
     width: 100%;
 }
 
 .other-links ul {
     margin-right: 20px;
-
 }
 
 .other-links ul li {
@@ -87,7 +85,7 @@ body {
 }
 
 /* paradise */
-.iMrZpd {
+.main_FaQ_card {
     max-width: 77rem;
     margin: 0rem auto 5rem;
     border-radius: 2.4rem;
@@ -99,11 +97,11 @@ body {
     gap: 1.5rem;
 }
 
-.cqOGbR {
+.card_FaQ {
     max-width: 22rem;
     width: 100%;
-    height: 38rem;
-    padding: 4rem 2rem;
+    height: 25rem;
+    padding: 2rem 2rem;
     background: linear-gradient(144.83deg, rgb(63, 137, 180) 0%, rgb(121, 206, 196) 48.66%, rgb(108, 197, 104) 100%);
     filter: drop-shadow(rgba(116, 174, 146, 0.1) 0px 6px 61px);
     border-radius: 1.8rem;
@@ -111,10 +109,9 @@ body {
     flex-direction: column;
     -webkit-box-pack: justify;
     justify-content: space-between;
-
 }
 
-.kHFwZP {
+.heading_card_FaQ {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2.8rem;
@@ -123,12 +120,12 @@ body {
     color: rgb(242, 242, 242);
     text-transform: capitalize;
 }
-
+/* 
 .sc-eKJbhj {
     width: 16.2rem;
     height: 14.2rem;
     background-repeat: no-repeat;
-}
+} */
 
 .visit a {
     border-radius: 20px;
@@ -141,11 +138,11 @@ body {
 /* section 2 ends */
 /* section 3 starts  */
 
-#section2 .cqOGbR {
+#section-2 .card_FaQ {
     max-width: 22rem;
     width: 100%;
-    height: 20rem;
-    padding: 0rem 2rem;
+    height: 17.8rem;
+    padding: 2rem 2rem;
     background: linear-gradient(144.83deg, rgb(63, 137, 180) 0%, rgb(121, 206, 196) 48.66%, rgb(108, 197, 104) 100%);
     filter: drop-shadow(rgba(116, 174, 146, 0.1) 0px 6px 61px);
     border-radius: 1.8rem;
