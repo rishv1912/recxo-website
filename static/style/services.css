@@ -205,28 +205,29 @@ body {
 
 
 /* ============================================Card Property=============================== */
-/* @property --rotate {
+@property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
     inherits: false;
   }
   
   :root {
-    --card-height: 16rem;
-    --card-width: 30%;
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
   }
   
   
-   /* {
-    min-height: 100vh;
-    background: #212534;
+  #section-3 {
+    /* min-height: 100vh; */
+    /* background: #212534;
+    z-index: -100;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding-top: 2rem;
+    flex-direction: column; */
+    /* padding-top: 2rem;
     padding-bottom: 2rem;
-    box-sizing: border-box;
-  } 
+    box-sizing: border-box; */
+  }
   
   
   .card {
@@ -244,6 +245,7 @@ body {
     color: rgb(88 199 250 / 0%);
     cursor: pointer;
     font-family: cursive;
+    /* z-index: 0.5; */
   }
   
   .card:hover {
@@ -263,7 +265,7 @@ body {
     border-radius: 8px;
     background-image: linear-gradient(
       var(--rotate)
-      ,  #55cb84, #96e6db 43%, #a4e616);
+      , #5ddcff, #3c67e3 43%, #4e00c2);
       position: absolute;
       z-index: -1;
       top: -1%;
@@ -271,7 +273,7 @@ body {
       animation: spin 2.5s linear infinite;
   }
   
-   .card::after {
+  .card::after {
     position: absolute;
     content: "";
     top: calc(var(--card-height) / 6);
@@ -289,25 +291,6 @@ body {
       opacity: 1;
     transition: opacity .5s;
     animation: spin 2.5s linear infinite;
-  } 
-  .card::after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-image: linear-gradient(
-      var(--rotate)
-      , #55cb84, #96e6db 43%, #a4e616);
-      opacity: 1;
-    transition: opacity .5s;
-    animation: spin 2.5s linear infinite;
   }
   
   @keyframes spin {
@@ -319,12 +302,11 @@ body {
     }
   }
   
-  #section-3 a {
+  a {
     color: #212534;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
     margin-top: 2rem;
   }
-   */
   

@@ -302,8 +302,8 @@ body {
 
 .cover-3 h2 {
     padding: 10px 0;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    font-family: var(--font-poppins);
     font-size: 1.2rem;
 
 }
@@ -331,23 +331,23 @@ body {
 
 
 .cover-3 .box .soft-ord a {
-    background-color: black;
+    background-color: var(--color-black);
     text-align: center;
     padding: 3px 12px;
 
     font-size: 21px;
     border-radius: 30px;
     margin: 10px 0;
-    font-family: 'Poppins', sans-serif;
-    color: white;
+    font-family: var(--font-poppins);
+    color: var(--color-white);
 
 
 }
 
 .section3 .explore-txt {
-    color: #000;
+    color: var(--color-black);
     padding: 26px;
-    background-color: #f1f1f1;
+    background-color: var(--color-fade-white);
     max-width: 1250px;
     margin: auto;
     border-radius: 12px
