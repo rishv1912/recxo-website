@@ -108,8 +108,6 @@ def software_section(request):
 
 
 
-
-    
 # contact related
 
 
