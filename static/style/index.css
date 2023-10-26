@@ -14,6 +14,19 @@ font-family: 'Oxygen', sans-serif ;  EXPLATION AND INTRO;
 font-family: 'Poppins', sans-serif; QUESTION AND HIGHLIGHTING */
 
 
+
+/* ======================== Variables ============================= */
+:root{
+    --color-main : #55cb84;
+    --color-black : black;
+    --color-white : white;
+    --color-fade-white: #f1f1f1;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -27,16 +40,16 @@ a{
 
 
 body {
-    font-family: 'Oxygen', sans-serif;
+    font-family:var(--font-oxygen);
     align-items: center;
     justify-content: center;
 }
 
-/* navbar starts */
+/* ========================================== navbar starts ========================================== */
 
 
-/*  mainpage starts*/
-/* section 1 starts */
+/* ==========================================  mainpage starts ==========================================  */
+/* ========================================== section 1 starts ========================================== */
 .section1 {
     margin: 0 10px;
 }
@@ -54,14 +67,14 @@ body {
 .section1 .sub-section1 .intro h2 {
     text-align: center;
     font-size: 60px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 /* auto input h3 */
 .section1 .sub-section1 .intro h3 {
     font-size: 2rem;
     padding: 0 115px 1px 100px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 
@@ -77,9 +90,8 @@ body {
     position: relative;
 }
 
-/* section 1 ends */
 
-/* section 2 start */
+/*========================================== section 2 start ========================================== */
 .section2 {
     height: 893px;
     width: 100%;
@@ -97,14 +109,14 @@ body {
     text-align: center;
 
     padding: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-size: 40px;
 }
 
 .sec2-intro {
     text-align: center;
     padding: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-size: 40px;
 }
 
@@ -147,8 +159,8 @@ body {
 
 .cover-1 h2 {
     padding: 10px 0;
-    color: black;
-    font-family: 'Poppins', sans-serif;
+    color: var(--color-black);
+    font-family: var(--font-poppins);
 
 }
 
@@ -160,7 +172,7 @@ body {
 }
 
 /* copied */
-.iMrZpd {
+.main_index_card{
     max-width: 77rem;
     margin: 0rem auto 5rem;
     border-radius: 2.4rem;
@@ -172,7 +184,7 @@ body {
     gap: 1.5rem;
 }
 
-.cqOGbR {
+.card_index {
     max-width: 22rem;
     width: 100%;
     height: 28rem;
@@ -187,7 +199,7 @@ body {
 
 }
 
-.kHFwZP {
+.index_card_title {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2.8rem;
@@ -197,7 +209,7 @@ body {
     text-transform: capitalize;
 }
 
-.sc-eKJbhj {
+.index_card_img {
     width: 16.2rem;
     height: 14.2rem;
     background-repeat: no-repeat;
@@ -225,8 +237,7 @@ body {
 
 
 
-/* section 2 ends */
-/* section 3 starts  */
+/* ==========================================  section 3 starts ==========================================  */
 .c2-img-1 {
     width: 18.2rem;
     height: 18.2rem;
@@ -342,7 +353,7 @@ body {
     border-radius: 12px
 }
 
-/* mainpage ends */
+/* ==========================================  mainpage ends =========================================  */
 
 
 
