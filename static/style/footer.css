@@ -1,5 +1,4 @@
 
-/* footer starts */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,17 @@
     list-style: none;
     box-sizing: border-box;
 }
+/* ======================== Variables ============================= */
+:root{
+    --color-main : #55cb84;
+    --color-black : black;
+    --color-white : white;
+    --color-fade-white: #f1f1f1;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
 
+/* ============================= footer starts =============================*/
 a {
     text-decoration: none;
 }
@@ -31,8 +40,8 @@ a {
     left: 0;
     /* bottom: 0; */
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: var(--color-black);
+    color: var(--color-white);
     text-align: center;
 }
 
@@ -43,7 +52,7 @@ a {
 
 .footer-col h4 {
     font-size: 18px;
-    color: #55cb84;
+    color: var(--color-main);
     text-transform: capitalize;
     margin-bottom: 35px;
     padding: 5px 0;
@@ -70,7 +79,7 @@ a {
     font-size: 16px;
 
     text-transform: capitalize;
-    color: #fff;
+    color:var(--color-white);
     text-decoration: none;
     font-weight: 300;
     /* color: #bbbbbb; */
@@ -79,7 +88,7 @@ a {
 }
 
 .footer-col ul li a:hover {
-    color: #55cb84;
+    color: var(--color-main);
     padding-left: 8px;
 }
 
@@ -92,18 +101,18 @@ a {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--color-white);
     transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
     color: #24262b;
-    background-color: #ffffff;
+    background-color: var(--color-white);
 }
 
 .copyright {
     padding: 30px 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 300;
 
 }
