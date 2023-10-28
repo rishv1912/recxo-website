@@ -36,8 +36,6 @@ urlpatterns = [
     path("softwares/", views.software_section, name="softwaresSection"),
 
 
-
-
     # company related
     path("term-condition/", views.term_and_cond, name="terms-conditions"),
     path("privacy-policy/", views.priv_policy, name="privacy-policy"),
