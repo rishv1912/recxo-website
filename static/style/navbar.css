@@ -1,4 +1,3 @@
-/* nav bar  starts*/
 
 * {
     margin: 0;
@@ -7,7 +6,18 @@
     list-style: none;
     box-sizing: border-box;
 }
+/* ======================== Variables ============================= */
+:root{
+    --color-main : #55cb84;
+    --color-black : black;
+    --color-white : white;
+    --color-fade-white: #f1f1f1;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
 
+
+/* ============================= navbar starts =============================*/
 a {
     text-decoration: none;
 }
@@ -22,11 +32,11 @@ nav {
 }
 
 nav .nav-items label.name {
-    color: #55cb84;
+    color: var(--color-main);
     font-size: 45px;
     font-weight: bold;
     line-height: 80px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .nav-items {
@@ -50,8 +60,8 @@ nav .nav-items {
 }
 
 .nav-items ._nav-items {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    font-family: var(--font-poppins);
     font-size: 17px;
     /* font-weight: 500; */
     padding: 7px 13px;
@@ -59,28 +69,28 @@ nav .nav-items {
 
 /* making the dropdown section different from the other li  */
 .nav-items #item-dropdown {
-    color: #fff;
+    color: var(--color-white);
     display: inline-block;
     margin: 0 5px;
 }
 
 .nav-items #item-dropdown .dropdown-menu li:hover {
     transition: .5s;
-    color: #55cb84;
+    color: var(--color-main);
 }
 
 nav ._nav-items a:hover {
     transition: .5s;
     text-decoration: none;
-    color: #55cb84;
+    color: var(--color-main);
 }
 
 .item .signin {
     /* margin-left: 20rem ; */
     padding: 10px 20px;
     font-size: 17px;
-    background-color: #55cb84;
-    color: white;
+    background-color: var(--color-main);
+    color: var(--color-white);
     border: rgb(83, 195, 8) solid 1.5px;
     border-radius: 0.5rem;
 
@@ -93,7 +103,7 @@ nav ._nav-items a:hover {
 
 /* dropdown when screen shrinks */
 .nav-items #min-scrn-dropdown {
-    color: #fff;
+    color: var(--color-white);
     display: inline-block;
     position: absolute;
     visibility: hidden;
@@ -106,7 +116,7 @@ nav ._nav-items a:hover {
 }
 .mobile-menu a{
     text-decoration: none;
-    color: #55cb84;
+    color: var(--color-main);
 }
 
 #menu-toggle {
@@ -116,7 +126,7 @@ nav ._nav-items a:hover {
 }
 
 .mobile-menu-toggle {
-    color: #fff;
+    color: white;
     font-size: 24px;
     padding: 10px;
     border: none;
@@ -135,7 +145,7 @@ nav ._nav-items a:hover {
     }
 
     .nav-items #min-scrn-dropdown {
-        color: #fff;
+        color: var(--color-main);
         display: inline-block;
         position: relative;
         right: 50%;
@@ -147,7 +157,6 @@ nav ._nav-items a:hover {
     .nav-items .dropdown-toggle {
         position: relative;
         top: 50%;
-
     }
 
     #menu-toggle {
