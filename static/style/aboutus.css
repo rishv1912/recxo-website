@@ -122,7 +122,7 @@ body {
     gap: 3.2rem;
 }
 
-.KlqdI {
+.sec_left_card {
     background: rgb(255, 255, 255);
     border: 0.1rem solid rgba(226, 227, 227, 0.6);
     box-shadow: rgb(244, 244, 244) 4px 4px 24px;
@@ -131,7 +131,7 @@ body {
     padding: 3.2rem 2.4rem;
 }
 
-.sec_card_img {
+.sec_card_top_left_icon {
     border: 1px solid rgb(233, 233, 233);
     border-radius: 0.4rem;
     width: 5rem;
