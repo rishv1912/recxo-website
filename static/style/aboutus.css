@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+/* ======================== Variables ============================= */
+:root {
+    --color-main: #55cb84;
+    --color-black: black;
+    --color-white: white;
+    --color-fade-white: #f1f1f1;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+
 body {
     font-family: 'Oxygen', sans-serif;
 }
@@ -54,11 +65,10 @@ body {
     backdrop-filter: blur(4px);
 }
 
-/* section 1 ends */
-/* section 2 starts */
+/*========================  section 1 ends======================== */
 
 
-.section-2 {
+/* .section-2 {
     max-width: 1024px;
     margin: auto;
     font-family: "Oxygen", sans-serif;
@@ -73,12 +83,111 @@ body {
     letter-spacing: -.015em;
     margin-bottom: 25px;
 
+} */
+
+/* ======================== section 2 starts ========================*/
+
+.section-2 {
+    padding: 6rem 5.4rem;
+    max-width: 135rem;
+    margin: auto;
+    background: url(./assets/ourmission.svg) 3rem 35% no-repeat;
 }
 
-/* section 2 ends */
+.sub-section-2 {
+    max-width: 110rem;
+    margin: auto;
+    display: flex;
+    gap: 5rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
 
-/* section 3 starts */
-.section-3 {
+.sub_sec_Left {
+    display: flex;
+    gap: 3rem;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.sub_sec_Left>div:last-child {
+    margin-top: 10rem;
+}
+
+.sec_Left {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.KlqdI {
+    background: rgb(255, 255, 255);
+    border: 0.1rem solid rgba(226, 227, 227, 0.6);
+    box-shadow: rgb(244, 244, 244) 4px 4px 24px;
+    border-radius: 0.8rem;
+    max-width: 25rem;
+    padding: 3.2rem 2.4rem;
+}
+
+.sec_card_img {
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 0.4rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(77, 243, 163);
+    line-height: 150%;
+}
+
+.sec_card_title {
+    margin: 1.6rem 0px 0.8rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: rgb(36, 55, 87);
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.sec_card_content {
+    font-weight: 400;
+    color: rgb(66, 82, 109);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.sec_Right_up {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 120%;
+    color: rgb(36, 55, 87);
+    text-transform: capitalize;
+}
+
+
+.sec_Right_down {
+    margin: 2.4rem 0px 3.2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    color: rgb(53, 71, 100);
+}
+
+
+/* ======================== section 2 ends ======================== */
+
+/* ========================section 3 starts========================*/
+/* .section-3 {
     max-width: 1024px;
     margin: 0em auto;
     font-family: "Oxygen", sans-serif;
@@ -101,20 +210,20 @@ body {
     font-size: 22px;
     line-height: 150%;
     color: #383333;
-}
+} */
 
-/* section 3 ends */
+
 
 /* copied from antern */
 
-.liRCXR {
+.sub-section-3 {
     max-width: 110rem;
     margin: 3rem auto;
     padding: 2.4rem;
 }
 
-.fBOYEi {
-    font-family: "Poppins",sans-serif;
+.ss-heading {
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 5rem;
     line-height: 120%;
@@ -123,7 +232,7 @@ body {
     text-transform: capitalize;
 }
 
-.idfpEz {
+.ss-intro {
     font-weight: 400;
     font-size: 2rem;
     line-height: 150%;
@@ -133,7 +242,7 @@ body {
     margin: 2.4rem auto 7.2rem;
 }
 
-.iqNxvk {
+.ss-leaders {
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-evenly;
@@ -141,23 +250,54 @@ body {
     gap: 20px;
 }
 
-.bRBePK {
+.ss-leader-card {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
 }
 
-.dNRqic {
-    padding: 4.5rem 0px 0px 2.4rem;
+.ss-leader-img {
+    width: 27rem;
+    height: 27rem;
+    background: linear-gradient(175.43deg, rgba(64, 245, 155, 0.2) 6.55%, rgba(77, 243, 163, 0.06) 98.7%) center center / cover, url(/static/img/rishavanand.png);
+    background-position: center;
+    border-radius: 3rem;
+}
+
+.ss-leader-info {
+    padding: 0px 0px 4.5rem 2.4rem;
+    order: -1;
     position: relative;
 }
 
-.cmdHQz {
+.ss-leader-info::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(96.12deg, rgb(77, 243, 163) 52.98%, rgba(253, 251, 255, 0) 75.34%);
+    transform: rotate(180deg);
+}
+
+.ss-leader-info::before {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: rgb(77, 243, 163);
+}
+
+.ss-socials {
     display: flex;
     gap: 1.2rem;
 }
 
-.jyrEwv {
+.ss-social-links {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
@@ -171,20 +311,16 @@ body {
     font-size: 1.8rem;
 }
 
-.fDbqtJ {
-    padding: 0px 0px 4.5rem 2.4rem;
-    order: -1;
+.dNRqic {
+    padding: 4.5rem 0px 0px 2.4rem;
     position: relative;
 }
 
-.cmdHQz {
-    display: flex;
-    gap: 1.2rem;
-}
 
-.bHwWQt {
+
+.ss-leader-name {
     margin: 1.2rem 0px 1rem;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
     line-height: 140%;
@@ -192,7 +328,7 @@ body {
     text-transform: capitalize;
 }
 
-.csChda {
+.ss-leader-position {
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 150%;
@@ -204,27 +340,6 @@ body {
 .dNRqic {
     padding: 4.5rem 0px 0px 2.4rem;
     position: relative;
-}
-
-.cmdHQz {
-    display: flex;
-    gap: 1.2rem;
-}
-
-.hQIWHW {
-    width: 22rem;
-    height: 20rem;
-    background: linear-gradient(175.43deg, rgba(64, 245, 155, 0.2) 6.55%, rgba(77, 243, 163, 0.06) 98.7%) center center / cover, url(/static/img/code.jpg);
-    background-position: center center;
-    border-radius: 3rem;
-}
-
-.hapdRj {
-    width: 27rem;
-    height: 27rem;
-    background: linear-gradient(175.43deg, rgba(64, 245, 155, 0.2) 6.55%, rgba(77, 243, 163, 0.06) 98.7%) center center / cover, url(/static/img/rishavanand.png);
-    background-position: center;
-    border-radius: 3rem;
 }
 
 .dNRqic::after {
@@ -248,112 +363,19 @@ body {
     background: rgb(77, 243, 163);
 }
 
-.fDbqtJ::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 2px;
-    background: linear-gradient(96.12deg, rgb(77, 243, 163) 52.98%, rgba(253, 251, 255, 0) 75.34%);
-    transform: rotate(180deg);
-}
-.fDbqtJ::before {
-    content: "";
-    position: absolute;
-    bottom: -0.5rem;
-    left: -0.5rem;
-    border-radius: 50%;
-    width: 1.2rem;
-    height: 1.2rem;
-    background: rgb(77, 243, 163);
-}
-
-
-
-/* our aim copying from antern */
-.fKutmU {
-    padding: 6rem 5.4rem;
-    max-width: 135rem;
-    margin: auto;
-    background: url(./assets/ourmission.svg) 3rem 35% no-repeat;
-}
-.kLRbLd {
-    max-width: 110rem;
-    margin: auto;
+.ss-socials {
     display: flex;
-    gap: 5rem;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    align-items: center;
+    gap: 1.2rem;
 }
-.jhBPuv {
-    display: flex;
-    gap: 3rem;
-    flex-shrink: 0;
-    position: relative;
-}
-.iIxQLD {
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-}
-.KlqdI {
-    background: rgb(255, 255, 255);
-    border: 0.1rem solid rgba(226, 227, 227, 0.6);
-    box-shadow: rgb(244, 244, 244) 4px 4px 24px;
-    border-radius: 0.8rem;
-    max-width: 25rem;
-    padding: 3.2rem 2.4rem;
+
+.hQIWHW {
+    width: 22rem;
+    height: 20rem;
+    background: linear-gradient(175.43deg, rgba(64, 245, 155, 0.2) 6.55%, rgba(77, 243, 163, 0.06) 98.7%) center center / cover, url(/static/img/code.jpg);
+    background-position: center center;
+    border-radius: 3rem;
 }
 
 
-.lazsti {
-    border: 1px solid rgb(233, 233, 233);
-    border-radius: 0.4rem;
-    width: 5rem;
-    height: 5rem;
-    font-size: 2.5rem;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    color: rgb(77, 243, 163);
-    line-height: 150%;
-}
-.cEOHHH {
-    margin: 1.6rem 0px 0.8rem;
-    font-weight: 500;
-    font-size: 1.8rem;
-    color: rgb(36, 55, 87);
-    text-transform: capitalize;
-    font-family: 'Poppins',sans-serif;
-    
-}
-.jsJWdF {
-    font-weight: 400;
-    color: rgb(66, 82, 109);
-    font-family: 'Poppins',sans-serif;
-}
 
-.hRixkX {
-    font-family: 'Poppins',sans-serif;
-    font-weight: 700;
-    font-size: 5rem;
-    line-height: 120%;
-    color: rgb(36, 55, 87);
-    text-transform: capitalize;
-}
-.jSpvkA {
-    margin: 2.4rem 0px 3.2rem;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 150%;
-    color: rgb(53, 71, 100);
-}
-.jhBPuv > div:last-child {
-    margin-top: 10rem;
-}
-
+/* ======================== section 3 ends======================== */
