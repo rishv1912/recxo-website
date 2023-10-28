@@ -10,9 +10,26 @@
 /* ========================Variables==================== */
 :root{
     --main-color : #55cb84;
+    --color-black : black;
+    --color-white : white;
+    --color-fade-white: #f1f1f1;
     --font-oxygen: 'Oxygen', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
 }
+
+/* ======================== utility class ======================== */
+/* for color green */
+.color-green{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
 
 
 body {
