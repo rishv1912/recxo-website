@@ -220,10 +220,10 @@ body {
 }
 
 .hapdRj {
-    width: 22rem;
-    height: 20rem;
-    background: linear-gradient(175.43deg, rgba(64, 245, 155, 0.2) 6.55%, rgba(77, 243, 163, 0.06) 98.7%) center center / cover, url(/static/img/code.jpg);
-    background-position: center center;
+    width: 27rem;
+    height: 27rem;
+    background: linear-gradient(175.43deg, rgba(64, 245, 155, 0.2) 6.55%, rgba(77, 243, 163, 0.06) 98.7%) center center / cover, url(/static/img/rishavanand.png);
+    background-position: center;
     border-radius: 3rem;
 }
 
