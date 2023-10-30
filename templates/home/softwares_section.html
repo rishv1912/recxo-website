@@ -2,8 +2,8 @@
 {% static 'style/software_section.css' %} {% endblock link %} {% block title %}softwares{%endblock title %} {% block body %}
 
 <!-- main section -->
-<section id="section-parent">
-  <!-- website -->
+<!-- <section id="section-parent">
+
   <section class="section-child" id="section-1">
     <h2>Getting Started with Website</h2>
     <div class="box">
@@ -14,7 +14,6 @@
     </div>
   </section>
 
-  <!-- Application -->
   <section class="section-child" id="section-2">
     <h2>Getting started with Application</h2>
     <div class="box">
@@ -24,6 +23,39 @@
         </div>
     </div>
   </section>
+</section> -->
+
+<section>
+
+  
+  <h1>START !</h1>
+  <h2><span class="auto-input" ></span></h2>
+  <!--  -->
+  <div class="card">
+    <a href="{% url 'orders'%}">
+
+      Don't click
+    </a>
+  </div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- code for auto typing word -->
+<script>
+  var typed = new Typed(".auto-input", {
+    strings: [
+      "Websites",
+      "Apps",
+      "",
+      "Android and iOS",
+      "AI/ML",
+    ],
+    typeSpeed: 50,
+    backSpeed: 20,
+    loop: true,
+  });
+</script>
+
+
 
 {% endblock body %}
