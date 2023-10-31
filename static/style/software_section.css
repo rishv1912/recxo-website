@@ -185,6 +185,7 @@ margin: 2rem 0 ;
     color: rgb(88 199 250 / 100%);
     text-decoration: none;
     font-family: sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* margin-top: 2rem; */
+    display: hidden;
   }
