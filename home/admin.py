@@ -5,6 +5,11 @@ from home.models import Home, Contact, Order, GetJob ,Softwares,SoftwareType
 # superuser name - recxo , email - regular, password - recxo098
 # user for experiment name - jay, password - jignesh6^^9
 
+admin.site.site_header  =  "recxo admin"  
+admin.site.site_title  =  "recxo admin site"
+admin.site.index_title  =  "recxo Admin"
+
+
 
 # these all classes will arrange the list shown on the django admin.
 
