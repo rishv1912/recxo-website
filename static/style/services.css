@@ -130,7 +130,7 @@ body {
 }
 
 .heading_card_FaQ {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 108%;
@@ -288,6 +288,34 @@ a {
 
 
 /* media queries */
+
+
+@media screen  and (max-width : 1235px){
+    .heading_card_FaQ{
+        font-size: 2.1rem;
+    }
+    .heading_card_FaQ p{
+        font-size: 15px;
+    }
+    .card_FaQ{
+        width: 30%;
+    /* height: 19rem; */
+    }
+    
+}
+
+@media screen  and (max-width : 960px){
+
+    
+}
+
+@media screen and (max-width : 820px){
+
+    
+}
+
+
+
 
 @media screen and (max-width : 450px) {
 
