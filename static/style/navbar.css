@@ -31,7 +31,7 @@ nav {
     z-index: 100;
 }
 
-nav .nav-items label.name {
+nav .nav-items .name {
     color: var(--color-main);
     font-size: 45px;
     font-weight: bold;
@@ -139,6 +139,9 @@ nav ._nav-items a:hover {
     .nav-items .nav-links .item {
         display: none;
     }
+    .nav-items .name{
+        font-size: 35px;
+    }
 
     .nav-items .nav-links #item-dropdown {
         display: none;
@@ -169,4 +172,15 @@ nav ._nav-items a:hover {
         display: block;
     }
 
+}
+
+
+@media (max-width: 420px) {
+    nav{
+        height: 75px;
+    }
+    .nav-items .name{
+        font-size: 35px;
+        line-height: 60px;
+    }
 }

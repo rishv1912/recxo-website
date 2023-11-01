@@ -172,7 +172,6 @@ body {
     display: flex;
 }
 
-/* copied */
 .main_index_card {
     max-width: 77rem;
     margin: 0rem auto 5rem;
@@ -183,6 +182,13 @@ body {
     -webkit-box-pack: center;
     justify-content: center;
     gap: 1.5rem;
+}
+
+.recxo_index_title{
+    text-align: center;
+      font-size: 60px;
+      font-family: 'Poppins', sans-serif;
+
 }
 
 .card_index {
@@ -367,64 +373,61 @@ body {
 /*========================================== media queries of responsive ========================================== */
 /* layout */
 
-@media screen and (max-width:320px) {
-    .index_card_img {
-        width: 7.2rem;
-        height: 7.2rem;
+@media (max-width:1335px) {
+    .section1 {
+        margin: 0 10px;
     }
-
-    .card_index {
-        height: 17rem;
+    
+    .sub-section1 {
+        display: flex;
+        max-width: 1450px;
+        margin: 0px auto;
     }
-
-    .index_card_title {
-        font-size: 1.3rem;
-        line-height: 108%;
+    
+    .intro {
+        padding: 4px 0;
     }
-
+    
+    .section1 .sub-section1 .intro h2 {
+        text-align: center;
+        font-size: 60px;
+    }
+    
+    /* auto input h3 */
+    .section1 .sub-section1 .intro h3 {
+        font-size: 1.5rem;
+        padding: 0 0px 1px 20px;
+    }
+    
+    .intro p {
+        padding: 0 20px;
+        font-size: 17px;
+    }
+    
+    /* section 1 ends */
 }
-
-@media screen and (max-width : 425px) {
-    .card_index{
-        height: 20rem;
-    }
-
-    .index_card_img {
-        width: 10.2rem;
-        height: 9.2rem;
-    }
-
-    .index_card_title {
-        font-size: 1.8rem;
-        line-height: 108%;
-    }
-
-
-}
-
-@media (max-width: 821px) {}
 
 @media (max-width:960px) {
     .home-img-1 img {
         display: none;
     }
-
+    
     .section1 {
         margin: 0px 10px;
     }
-
+    
     .intro {
         padding: 0px 0;
     }
-
-
+    
+    
     .cover-1 h2 {
         padding: 10px 0;
         color: black;
         font-family: var(--font-poppins);
         font-size: 18px;
     }
-
+    
     .box {
         margin: 22px 0px;
         width: 245px;
@@ -434,9 +437,9 @@ body {
         justify-content: center;
         text-align: center;
         border-radius: 10px;
-
+        
     }
-
+    
     .cover-3 .box {
         margin-bottom: 60px;
         width: 247px;
@@ -447,34 +450,34 @@ body {
         text-align: center;
         border-radius: 10px;
     }
-
+    
     .cover-3 .box p {
         padding: 3px 0px;
         margin: 1px 3px;
         font-size: 13px;
     }
-
+    
     .cover-3 h2 {
         font-size: 17px;
         color: white;
     }
-
+    
     .cover-3 img {
         width: 247px;
         border-radius: 10px;
         height: 249px;
         display: flex;
     }
-
-
+    
+    
     .cover-3 .box .soft-ord {
         margin: 0px 16px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
-
-
+    
+    
     .cover-3 .box .soft-ord a {
         background-color: black;
         text-align: center;
@@ -484,43 +487,57 @@ body {
         margin: 10px 0;
         font-family: var(--font-poppins);
         color: white;
-
+        
     }
-
+    
     /* section 3 ends  */
+    
+}
+
+@media (max-width: 821px) {
+    .section1 .sub-section1 .intro h2 {
+        font-size: 55px;
+    }
+    .recxo_index_title{
+    font-size: 45px;}
+}
+
+@media screen and (max-width : 425px) {
+    .card_index{
+        height:17rem;
+        width: 75%;
+    }
+    
+    .index_card_img {
+        width: 10.2rem;
+        height: 9.2rem;
+    }
+    
+    .index_card_title {
+        font-size: 1.25rem;
+        line-height: 108%;
+    }
+    .section1 .sub-section1 .intro h2 {
+        text-align: center;
+        font-size: 45px;
+    }
 
 }
 
-@media (max-width:1335px) {
-    .section1 {
-        margin: 0 10px;
+    
+@media screen and (max-width:320px) {
+    .index_card_img {
+        width: 7.2rem;
+        height: 7.2rem;
     }
 
-    .sub-section1 {
-        display: flex;
-        max-width: 1450px;
-        margin: 0px auto;
+    .card_index {
+        /* height: 17rem; */
     }
 
-    .intro {
-        padding: 4px 0;
+    .index_card_title {
+        font-size: 1.3rem;
+        line-height: 108%;
     }
 
-    .section1 .sub-section1 .intro h2 {
-        text-align: center;
-        font-size: 60px;
-    }
-
-    /* auto input h3 */
-    .section1 .sub-section1 .intro h3 {
-        font-size: 1.5rem;
-        padding: 0 0px 1px 20px;
-    }
-
-    .intro p {
-        padding: 0 20px;
-        font-size: 21px;
-    }
-
-    /* section 1 ends */
 }

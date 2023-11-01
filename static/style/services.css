@@ -288,6 +288,7 @@ a {
 
 
 /* media queries */
+
 @media screen and (max-width : 450px) {
 
     .ser-que {
