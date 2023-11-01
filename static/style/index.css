@@ -16,10 +16,10 @@ font-family: 'Poppins', sans-serif; QUESTION AND HIGHLIGHTING */
 
 
 /* ======================== Variables ============================= */
-:root{
-    --color-main : #55cb84;
-    --color-black : black;
-    --color-white : white;
+:root {
+    --color-main: #55cb84;
+    --color-black: black;
+    --color-white: white;
     --color-fade-white: #f1f1f1;
     --font-oxygen: 'Oxygen', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
@@ -34,13 +34,14 @@ font-family: 'Poppins', sans-serif; QUESTION AND HIGHLIGHTING */
     list-style: none;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 
 body {
-    font-family:var(--font-oxygen);
+    font-family: var(--font-oxygen);
     align-items: center;
     justify-content: center;
 }
@@ -172,7 +173,7 @@ body {
 }
 
 /* copied */
-.main_index_card{
+.main_index_card {
     max-width: 77rem;
     margin: 0rem auto 5rem;
     border-radius: 2.4rem;
@@ -200,7 +201,7 @@ body {
 }
 
 .index_card_title {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-poppins);
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 108%;
@@ -367,14 +368,16 @@ body {
 /* layout */
 
 @media screen and (max-width:320px) {
-    .sc-eKJbhj {
+    .index_card_img {
         width: 7.2rem;
-        height:7.2rem;
+        height: 7.2rem;
     }
-    .cqOGbR {
+
+    .card_index {
         height: 17rem;
     }
-    .kHFwZP {
+
+    .index_card_title {
         font-size: 1.3rem;
         line-height: 108%;
     }
@@ -382,16 +385,16 @@ body {
 }
 
 @media screen and (max-width : 425px) {
-     .cqOGbR {
+    .card_index{
         height: 20rem;
     }
 
-    .sc-eKJbhj {
+    .index_card_img {
         width: 10.2rem;
         height: 9.2rem;
     }
 
-    .kHFwZP {
+    .index_card_title {
         font-size: 1.8rem;
         line-height: 108%;
     }
@@ -418,12 +421,11 @@ body {
     .cover-1 h2 {
         padding: 10px 0;
         color: black;
-        font-family: 'Poppins', sans-serif;
+        font-family: var(--font-poppins);
         font-size: 18px;
     }
 
     .box {
-
         margin: 22px 0px;
         width: 245px;
         height: 273px;
@@ -434,8 +436,6 @@ body {
         border-radius: 10px;
 
     }
-
-
 
     .cover-3 .box {
         margin-bottom: 60px;
@@ -482,10 +482,11 @@ body {
         font-size: 15px;
         border-radius: 30px;
         margin: 10px 0;
-        font-family: 'Poppins', sans-serif;
+        font-family: var(--font-poppins);
         color: white;
 
     }
+
     /* section 3 ends  */
 
 }
@@ -520,6 +521,6 @@ body {
         padding: 0 20px;
         font-size: 21px;
     }
+
     /* section 1 ends */
 }
-
