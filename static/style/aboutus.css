@@ -379,3 +379,19 @@ body {
 
 
 /* ======================== section 3 ends======================== */
+
+
+
+
+/*======================== responsiveness ========================  */
+@media screen and (max-width: 1305px) {
+    .sub-section-2 {
+        flex-direction: column-reverse;
+    }
+}
+@media screen  and (max-width : ){
+    
+    .sub_sec_Left{
+        flex-direction: column-reverse;
+    }
+}
