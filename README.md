@@ -40,12 +40,12 @@ virtual [name]
 
 For Mac
 ```
-source env/bin/activate
+source [envname]/bin/activate
 ```
 
 For Windows
 ```
-env\scripts\activate
+[envname]\scripts\activate
 ```
 
 --> Install the requirements:
