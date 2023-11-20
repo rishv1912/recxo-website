@@ -86,6 +86,7 @@ DATABASES = {
         'PASSWORD' :'G12*fEe6Fd2C1FcaF545*cGBa5GBA2Ca',
         'HOST' :'roundhouse.proxy.rlwy.net',
         'PORT' :'15641',
+        
     }
 }
 
