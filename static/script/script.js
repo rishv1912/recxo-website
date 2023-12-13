@@ -7,4 +7,9 @@
    // Toggle the "active" class on the mobile menu element
    mobileMenu.classList.toggle("active");
  });
- 
+
+//  hamburger of navbar
+ const menu_btn = document.querySelector('.hamburger');
+ menu_btn.addEventListener('click',function () {
+  menu_btn.classList.toggle('is-active');
+ })

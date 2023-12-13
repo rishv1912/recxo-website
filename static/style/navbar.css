@@ -96,43 +96,70 @@ nav ._nav-items a:hover {
 
 }
 
-.nav-items .nav-links .hamburber {
-    display: none;
-    visibility: hidden;
-}
-
-/* dropdown when screen shrinks */
-.nav-items #min-scrn-dropdown {
-    color: var(--color-white);
-    display: inline-block;
-    position: absolute;
-    visibility: hidden;
-    margin: 0 5px;
-}
-
-.mobile-menu {
-    display: none;
-
-}
-.mobile-menu a{
-    text-decoration: none;
-    color: var(--color-main);
-}
-
-#menu-toggle {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.mobile-menu-toggle {
-    color: white;
-    font-size: 24px;
-    padding: 10px;
-    border: none;
+/* Hamburger */
+.hamburger {
+    display: block;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
-}
+    position: relative;
+    appearance: none;
+    outline: none;
+    background: none;
+    border: none;
+  }
+  .hamburger .bar,
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 5px;
+    background-color: var(--color-main);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
 
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .mobile-nav {
+    background-color: #fafafaeb;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+    min-width: 100vh;
+    z-index: 98;
+    display: block;
+    transition: 0.4s;
+  }
+
+  .mobile-nav.is-active {
+    left: 0;
+  }
+  .mobile-nav a {
+    font-family: var(--font-poppins);
+    color: var(--color-main);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto 16px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    width: fit-content;
+  }
 
 
 @media (max-width: 821px) {
@@ -174,6 +201,14 @@ nav ._nav-items a:hover {
 
 }
 
+@media (min-width :821px){
+    .hamburger{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+}
 
 @media (max-width: 420px) {
     nav{
