@@ -50,6 +50,81 @@
             <li class="item">
               <a class="_nav-items" href="{% url 'about'%}">About Us</a>
             </li>
+            <!-- {% if user.is_authenticated %}
+            <li id="item-dropdown">
+              <ul class="navbar-nav ml-auto mx-1">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Welcome {{request.user}}
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{% url 'user-profile' request.user.id%}"
+                        >Profile</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'orders'%}"
+                        >Orders</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Others</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'logout'%}"
+                        >Logout</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            {% else %}
+            <li class="item" id="signin">
+              <a class="signin" class="_nav-items" href="{% url 'login'%}"
+                >Log in</a
+              >
+            </li>
+
+            {% endif %}
+            <li id="min-scrn-dropdown">
+              <ul class="navbar-nav ml-auto mx-1">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Welcome {{request.user}}
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/">Home</a></li>
+                    <li>
+                      <a class="dropdown-item" href="{% url 'services'%}"
+                        >Services</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Orders</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                    <li><a class="dropdown-item" href="#">About us</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li> -->
 
 
             <li>
