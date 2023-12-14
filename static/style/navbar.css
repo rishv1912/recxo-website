@@ -100,9 +100,9 @@ nav ._nav-items a:hover {
 .hamburger {
     display: block;
     width: 35px;
-    height: 35px;
     cursor: pointer;
     position: relative;
+
     appearance: none;
     outline: none;
     background: none;
@@ -125,7 +125,7 @@ nav ._nav-items a:hover {
   }
 
   .hamburger.is-active::after {
-    transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -7px);
   }
 
   .hamburger.is-active .bar {
