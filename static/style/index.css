@@ -362,19 +362,6 @@ body {
 
 /* ==========================================  mainpage ends =========================================  */
 /* ==========================================  floating chat button =========================================  */
-.float_message_icon{
-    position: relative;
-    right: 20px;
-
-}
-
-.float_message_icon .chat_icon img{
-    width: 4%;
-}
-
-
-
-
 
 
 /* footer ends */
