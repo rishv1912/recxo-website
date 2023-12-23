@@ -108,8 +108,9 @@ nav ._nav-items a:hover {
     background: none;
     border: none;
   }
+
+  /* .hamburger::after, */
   .hamburger .bar,
-  .hamburger::after,
   .hamburger::before {
     content: "";
     width: 100%;
