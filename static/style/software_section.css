@@ -81,8 +81,14 @@ h2{
 
 #section-2 .software_parent{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.child{
+    border : 2px solid red;
+    width: 33%;
+    /* height : 70px; */
 }
 
 
