@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import dj_database_url
 from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -80,15 +81,14 @@ WSGI_APPLICATION = 'recxo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'railway',
-        'USER' :'postgres',
-        'PASSWORD' :'G12*fEe6Fd2C1FcaF545*cGBa5GBA2Ca',
-        'HOST' :'roundhouse.proxy.rlwy.net',
-        'PORT' :'15641',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME':BASE_DIR / 'db.sqlite3',
         
     }
 }
+
+# DATABASES["default"] = dj_database_url.parse("postgres://recxo_database_user:R5zMWJvdfaO5HVFLebQCycS1M0am4OWe@dpg-cn26oqv109ks7393svm0-a/recxo_database")
+# postgres://recxo_database_user:R5zMWJvdfaO5HVFLebQCycS1M0am4OWe@dpg-cn26oqv109ks7393svm0-a/recxo_database
 
 
 # Password validation
