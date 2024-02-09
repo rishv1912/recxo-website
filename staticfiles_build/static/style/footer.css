@@ -1,0 +1,124 @@
+/* ======================== Variables ============================= */
+:root{
+    --color-main : #55cb84;
+    --color-black : black;
+    --color-white : white;
+    --color-fade-white: #f1f1f1;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: var(--font-oxygen);
+}
+
+/* ============================= footer starts ============================= */
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+    text-align: left;
+}
+
+.footer {
+    border-radius: 5.6rem 5.6rem 0rem 0rem;
+    position: static;
+    margin-top: 10px;
+    left: 0;
+    /* bottom: 0; */
+    width: 100%;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: var(--color-white);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    padding: 5px 0;
+    font-weight: 700;
+    position: relative;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+/* .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+} */
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(231 231 231 / 85%);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--color-main);
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 8px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--color-white);
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: var(--color-white);
+}
+
+.copyright {
+    padding: 30px 0;
+    font-family: var(--font-poppins);
+    font-weight: 300;
+
+}
+
+/* ============================= media queries ============================= */

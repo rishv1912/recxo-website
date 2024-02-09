@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/* ========================Variables==================== */
+:root {
+    --main-color: #55cb84;
+    --color-black: black;
+    --color-white: white;
+    --color-fade-white: #f1f1f1;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+/* ======================== utility class ======================== */
+/* for color green */
+.color-green {
+    color: var(--main-color);
+}
+
+
+
+body {
+    font-family: var(--font-oxygen);
+}
+
+.services {
+    margin: 3px 0;
+    max-width: 1450px;
+    margin: auto;
+}
+
+.ser-que {
+    font-size: 40px;
+    margin: 0 10px;
+    font-family: var(--font-poppins);
+}
+
+.ser {
+    font-size: 17px;
+    margin: 0 20px;
+    padding: 10px 5px;
+}
+
+.ser li {
+    padding: 2px;
+}
+
+.li-def {
+    font-size: 15px;
+    margin: 0 30px;
+    padding: 4px 40px;
+}
+
+.ser-ans {
+    font-size: 20px;
+    margin: 0 20px;
+    padding: 1px 0;
+}
+
+.soft {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 2px;
+    font-family: var(--font-poppins);
+}
+
+/* .soft { */
+/* font-size: 17px;
+    padding: 0px 10px;
+    text-align: left;
+} */
+
+.other-links {
+    width: 100%;
+}
+
+.other-links ul {
+    margin-right: 20px;
+}
+
+.other-links ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding: 0 150px;
+}
+
+.other-links ul li a {
+    color: #555;
+    font-family: var(--font-poppins);
+    font-size: 17px;
+    padding: 7px 13px;
+}
+
+.other-links ul li a:hover {
+    transition: .5s;
+}
+
+/* paradise */
+.main_FaQ_card {
+    max-width: 77rem;
+    margin: 0rem auto 5rem;
+    border-radius: 2.4rem;
+    padding: 0rem 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.card_FaQ {
+    max-width: 22rem;
+    width: 100%;
+    height: 25rem;
+    padding: 2rem 2rem;
+    background: linear-gradient(144.83deg, rgb(63, 137, 180) 0%, rgb(121, 206, 196) 48.66%, rgb(108, 197, 104) 100%);
+    filter: drop-shadow(rgba(116, 174, 146, 0.1) 0px 6px 61px);
+    border-radius: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.heading_card_FaQ {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 108%;
+    letter-spacing: -0.04em;
+    color: rgb(242, 242, 242);
+    text-transform: capitalize;
+}
+
+/* 
+.sc-eKJbhj {
+    width: 16.2rem;
+    height: 14.2rem;
+    background-repeat: no-repeat;
+} */
+
+.visit a {
+    border-radius: 20px;
+    padding: 8px 14px;
+    color: white;
+    background-color: black;
+}
+
+/* ============================================Card Property=============================== */
+
+
+.softwares-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin: 4rem 0;
+}
+
+.softwares-type h2{
+    text-align: center;
+    font-family: var(--font-oxygen);
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+:root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+.card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    /* z-index: 0.5; */
+}
+
+.card li{
+    font-size: 4vh;
+}
+
+.card:hover {
+    color: var(--main-color);
+    transition: color 1s;
+}
+
+.card:hover:before,
+.card:hover:after {
+    animation: none;
+    opacity: 0;
+}
+
+
+.card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    /* background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2); */
+    background-image: linear-gradient(var(--rotate), #55cb84, #55cbbf 43%, #2c50de);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+ /* #55cb84 #55cbbf #2c50de */
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    /* background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2); */
+    background-image: linear-gradient(var(--rotate), #55cb84, #55cbbf 43%, #2c50de);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+a {
+    color: #212534;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* margin-top: 2rem; */
+}
+
+/* section 2 ends */
+/* section 3 starts  */
+
+#section-2 .card_FaQ {
+    max-width: 22rem;
+    width: 100%;
+    height: 17.8rem;
+    padding: 2rem 2rem;
+    background: linear-gradient(144.83deg, rgb(63, 137, 180) 0%, rgb(121, 206, 196) 48.66%, rgb(108, 197, 104) 100%);
+    filter: drop-shadow(rgba(116, 174, 146, 0.1) 0px 6px 61px);
+    border-radius: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+
+
+
+/* media queries */
+
+
+@media screen  and (max-width : 1235px){
+    .heading_card_FaQ{
+        font-size: 2.1rem;
+    }
+    .heading_card_FaQ p{
+        font-size: 15px;
+    }
+    .card_FaQ{
+        width: 30%;
+    /* height: 19rem; */
+    }
+}
+
+@media screen  and (max-width : 960px){
+}
+
+@media screen and (max-width : 820px){
+}
+
+
+
+
+@media screen and (max-width : 450px) {
+
+    .ser-que {
+        font-size: 27px;
+        margin: 0 10px;
+        font-family: var(--font-poppins);
+    }
+
+    .ser-ans {
+        font-size: 15px;
+        margin: 0 20px;
+        padding: 1px 0;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 0 20px;
+        padding: 10px 5px;
+    }
+
+    .soft {
+        font-size: 12px;
+        margin: 0 40px;
+        padding: 0px 10px;
+    }
+
+    .li-def {
+        font-size: 12px;
+        margin: 0 30px;
+        padding: 4px 40px;
+    }
+}

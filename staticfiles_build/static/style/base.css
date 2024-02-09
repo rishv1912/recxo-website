@@ -1,0 +1,64 @@
+/* only nav bar and footer css will be written . Cause it is for base page */
+
+/* colors will be used white , black ,green ,#66FCF1
+
+white : whole website 
+black : text 
+green : button, highlighting and other 
+#55cb84: name and rarely
+*/
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&family=Oxygen:wght@300&family=Poppins&display=swap');
+
+/* font-family: 'Mulish', sans-serif;     used for NAME AND ETC ;
+font-family: 'Oxygen', sans-serif ;  EXPLATION AND INTRO;
+font-family: 'Poppins', sans-serif; QUESTION AND HIGHLIGHTING */
+
+/* image sources 
+undraw 
+humaaans 
+manypixels
+*/
+
+
+/* ======================== Variables ============================= */
+
+:root{
+    --main-color : #55cb84;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-oxygen);
+}
+
+body a {
+    text-decoration: none;
+}
+
+/* nav bar  starts*/
+
+/*responsive*/
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}

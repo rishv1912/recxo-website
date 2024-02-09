@@ -1,0 +1,293 @@
+/* only nav bar and footer css will be written . Cause it is for base page */
+
+/* colors will be used white , black ,green ,#66FCF1
+
+white : whole website 
+black : text 
+green : button, highlighting and other 
+#55cb84: name and rarely
+*/
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&family=Oxygen:wght@300&family=Poppins&display=swap');
+
+/* font-family: 'Mulish', sans-serif;     used for NAME AND ETC ;
+font-family: 'Oxygen', sans-serif ;  EXPLATION AND INTRO;
+font-family: 'Poppins', sans-serif; QUESTION AND HIGHLIGHTING */
+
+/* image sources 
+undraw 
+humaaans 
+manypixels
+*/
+
+/* ======================== Variables ============================= */
+:root{
+    --color-main : #55cb84;
+    --color-black : black;
+    --color-white : white;
+    --color-fade-white: #f1f1f1;
+    --font-oxygen: 'Oxygen', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+/* ======================== utility class ======================== */
+.class-border {
+    border: 2px solid black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bord {
+    border: 2px solid black;
+}
+
+form input{   
+    border: 2px solid black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-poppins);
+    /* height: 100vh; */
+    /* background: url(../img/contact.jpeg);
+     */
+    /* background: linear-gradient(120deg, #2980b9, #8e44ad); */
+    /* background: linear-gradient(60deg, #a561c2, #6eb15f); */
+    /* background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.contact-info {
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.contact-info i {
+    margin-right: 20px;
+    font-size: 25px;
+    /* font-family: 'Poppins', sans-serif; */
+
+}
+
+.contact-form {
+    max-width: 700px;
+
+    margin: 7vh auto;
+
+}
+
+.contact-info .contact-form {
+    flex: 1;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-form .text-box {
+    background: 4000;
+    color: aff;
+    border: none;
+    width: calc(50X - 18px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .text-box:first-child {
+    margin-right: 15px;
+}
+
+
+.contact-form textarea {
+    /* background: #000; */
+    color: aff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-form .send-btn {
+    float: right;
+    background: #55cb84;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
+    cursor: pointer;
+}
+
+.contact-form .send-btn:hover {
+    background: #0582E3;
+}
+
+
+/* for alert message */
+.alert-success {
+    z-index: 1;
+    background: #D4ED0A;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3AD663;
+    border-radius: 4px;
+}
+
+.alert-error {
+    z-index: 1;
+    background: #FFF3CD;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3AD663;
+    border-radius: 4px;
+}
+
+/* social links */
+.social-links h4 {
+    font-size: 40px;
+    color: #55cb84;
+    margin: 4px auto 8px auto;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 8px 10px 0;
+    text-align: center;
+    line-height: 63px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.social-links .links a i {
+    font-size: 26px;
+}
+
+.social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* other links */
+.other-links {
+
+    margin: 50px auto;
+    max-width: 1450px;
+}
+
+.other-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.other-links ul li {
+    margin: 0 8px;
+}
+
+.other-links ul li a {
+    color: var(--color-black);
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.other-links ul li a:hover {
+    color: #55cb84;
+    text-decoration: underline;
+}
+
+
+/* media queries */
+@media screen and (max-width:950px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        margin: 30px 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .contact-form .text-box {
+        width: 100%;
+    }
+
+    .social-links h4 {
+        font-size: 4px;
+        margin: 1px auto 3px auto;
+
+    }
+}

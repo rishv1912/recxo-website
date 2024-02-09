@@ -35,7 +35,7 @@ environ.Env.read_env()
 SECRET_KEY = 'django-insecure-ez-jrk(+qsg21^*tc6lx%_=mdes)$=-gtw=l+mijpf&a2z9#2q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -146,6 +146,19 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles_build' ,'static')
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+MEDIA_URL = '/images/'
+
+MEDIA_ROOT = BASE_DIR / 'static/images'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

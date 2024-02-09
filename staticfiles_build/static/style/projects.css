@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* projects css starts */
+#intro {
+    text-align: center;
+}
+
+#container {
+    height: 200vh;
+    width: 100%;
+    max-width: 1450px;
+    margin: auto;
+}
+
+.image {
+    /* background-color: aqua; */
+    height: 200px;
+    width: 890px;
+    border: 2px solid black;
+    /* background: url('https://source.unsplash.com/1000x500/?hacker'); */
+
+}
+
+.section-o {
+    height: 200px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: rgb(195, 175, 175); */
+    margin: 0 0 20px 0;
+    /* border: 2px green solid ; */
+}
+
+.section-e {
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: space-between; */
+    /* background-color: rgb(191, 162, 162); */
+    margin: 0 0 20px 0;
+    /* border: 2px green solid ; */
+}
+
+.img-about {
+    height: 200px;
+    /* border: 2px solid red; */
+    /* margin:0 20px; */
+
+}
+
+/* projects css ends */
