@@ -35,7 +35,7 @@ environ.Env.read_env()
 SECRET_KEY = 'django-insecure-ez-jrk(+qsg21^*tc6lx%_=mdes)$=-gtw=l+mijpf&a2z9#2q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',
     'home.apps.HomeConfig',
     'blog.apps.BlogConfig',
     'django.contrib.humanize',
@@ -58,6 +59,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -147,17 +149,19 @@ USE_TZ = True
 # STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
 # STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles_build' ,'static')
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = BASE_DIR / "static"
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static",
+# ]
 
-MEDIA_URL = '/images/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
-MEDIA_ROOT = BASE_DIR / 'static/images'
+# MEDIA_URL = '/images/'
+
+# MEDIA_ROOT = BASE_DIR / 'static/images'
 
 
 # Default primary key field type
