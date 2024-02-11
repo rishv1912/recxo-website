@@ -24,7 +24,7 @@
 <div class="div">
   {% for blog in blogposts %}
 
-  <a href="/">
+  <a href="">
     <div class="blogPostBlog">
       <div class="blogPostBlog__header">
         <a href="{% url 'blog-user-profile' blog.id %}">
@@ -34,7 +34,7 @@
       </div>
 
       <div class="blogPostBlog__content">
-        <a href="{% url 'blog-post' blog.id%}"> {{blog.name}} </a>
+        <a href="{% url 'blog-page' blog.id%}"> {{blog.name}} </a>
         <p>{{blog.content|limit_characters:200}}</p>
       </div>
 
