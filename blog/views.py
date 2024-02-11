@@ -28,22 +28,8 @@ def userProfile(request, pk):
 def blog(request, pk):
 
     blog = BlogPost.objects.get(id=pk)
-    room_messages = blog.message_set.all()
-    participants = blog.participants.all()
-
-    if request.method == 'POST':
-        message = Comment.objects.create(
-            user=request.user,
-            blog=blog,
-            body=request.POST.get('body')
-        )
-        blog.participants.add(request.user)
-
-        return redirect('room', pk=blog.id)
-
-    context = {'room': blog, 'room_messages': room_messages,
-               'participants': participants}
-    return render(request, 'base/room.html', context)
+    context = {'blog': blog}
+    return render(request, 'base/blog_page.html', context)
 
 
 @login_required(login_url='/login')

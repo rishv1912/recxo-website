@@ -1,34 +1,33 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'style/footer.css' %}">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style/footer.css' %}" />
+  </head>
+  <body>
     <footer class="footer">
-        <div class="container">
-          <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/">home</a></li>
+              <li><a href="{% url 'services'%}">services</a></li>
+              <li><a href="{% url 'contact'%}">Contact us</a></li>
+              <li><a href="{% url 'about'%}">about us</a></li>
+              <li><a href="{% url 'privacy-policy' %}">Privacy Policy</a></li>
+              <li>
+                <a href="{% url 'terms-conditions'%}">Terms &amp; Condition</a>
+              </li>
+              <li>
+                <a href="{% url 'cancelation-policy'%}">Cancelation-Policy</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="footer-col">
-              <h4>Company</h4>
-              <ul>
-                <li><a href="/">home</a></li>
-                <li><a href="{% url 'services'%}">services</a></li>
-                <li><a href="{% url 'contact'%}">Contact us</a></li>
-                <li><a href="{% url 'about'%}">about us</a></li>
-                <li><a href="{% url 'privacy-policy' %}">Privacy Policy</a></li>
-                <li>
-                  <a href="{% url 'terms-conditions'%}">Terms &amp; Condition</a>
-                </li>
-                <li>
-                  <a href="{% url 'cancelation-policy'%}">Cancelation-Policy</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- <div class="footer-col">
+          <!-- <div class="footer-col">
               <h4>get help</h4>
               <ul>
                 <li><a href="{% url 'services'%}">FAQ</a></li>
@@ -38,7 +37,7 @@
               </ul>
             </div> -->
 
-            <!-- <div class="footer-col">
+          <!-- <div class="footer-col">
               <h4>beyond</h4>
               <ul>
                 {% comment %}
@@ -53,40 +52,34 @@
               </ul>
             </div> -->
 
-            <div class="footer-col">
-              <h4>follow us</h4>
-              <div class="social-links">
-                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
-                <a href="https://twitter.com/" target="_blank"
-                  ><i class="fab fa-x-twitter"></i
-                ></a>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/company/recxo/?viewAsMember=true"
-                  target="_blank"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a
-                  href="https://discord.gg/JHU7gpje4F"
-                  target="_blank"
-                  ><i class="fab fa-discord"></i
-                ></a>
-              </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+              <!-- <a href="https://twitter.com/" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a> -->
+              <a
+                href="https://www.linkedin.com/company/recxo/?viewAsMember=true"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://discord.gg/JHU7gpje4F" target="_blank"
+                ><i class="fab fa-discord"></i
+              ></a>
             </div>
-
           </div>
         </div>
-        <div class="copyright">© Copyright Recxo 2023</div>
+      </div>
+      <div class="copyright">© Copyright Recxo 2023</div>
     </footer>
-    
-</body>
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-crossorigin="anonymous"
-></script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"
+  ></script>
 </html>

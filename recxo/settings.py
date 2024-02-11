@@ -37,7 +37,7 @@ SECRET_KEY = 'django-insecure-ez-jrk(+qsg21^*tc6lx%_=mdes)$=-gtw=l+mijpf&a2z9#2q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','0.0.0.0']
 
 
 # Application definition
@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'django.contrib.humanize',
     'recxo',
-    'ckeditor'
+    'ckeditor',
+    'gunicorn',
 ]
 
 MIDDLEWARE = [
