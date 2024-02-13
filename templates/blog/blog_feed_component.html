@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% load custom_filters %}
 <style>
   .div {
@@ -54,26 +53,6 @@
     <a href="{% url 'user-profile' room.host.id%}" class="roomListRoom__author">
       <div class="avatar avatar--small">
         <img src="https://randomuser.me/api/portraits/women/11.jpg" />
-=======
-{% block title %} blog{% endblock title %}
-{% block blogactive %}active{% endblock blogactive %} {% block body %}
-
-<div class="container my-3">
-  <h2>Coding Articles by iCoder</h2>
-  {% for post in allPosts %}
-  <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 my-4 position-relative">
-    <div class="col p-4 d-flex flex-column position-static">
-      <strong class="d-inline-block mb-2 text-primary">Article by {{post.author}} {{post.views}}</strong>
-      <h3 class="mb-0">{{post.title}}</h3>
-      <div class="mb-1 text-muted">{{post.datetime}}</div>
-      <p class="card-text mb-auto">
-          <div class="preview">
-          {{post.content|safe| truncatechars:500}}
-        </div>
-        </p>
-      <div class="my-2">
-        <a href="/blog/{{post.slug}}" role="button" class="btn btn-primary">Continue reading</a>
->>>>>>> system
       </div>
     </div> 
    
