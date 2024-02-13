@@ -16,43 +16,33 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 
-def userProfile(request, pk):
-    user = User.objects.get(id=pk)
-    # blogs = user.blog_set.all()
-    # blog_comments = user.comments_set.all()
-    topics = Topic.objects.all()
-    context = {'user': user, 'topics': topics}
-    return render(request, 'blog/profile.html', context)
-
-
-def blog(request, pk):
-
-    blog = BlogPost.objects.get(id=pk)
-    context = {'blog': blog}
+def blogPost(request,slug):
+    post = BlogPost.objects.filter(slug=slug).first()
+    context = {'post': post}
     return render(request, 'base/blog_page.html', context)
 
 
-@login_required(login_url='/login')
-def createBlog(request):
-    # form = RoomForm(request.POST)
-    topics = Topic.objects.all()
-    form = BlogPostForm()
-    if request.method == 'POST':
-        topic_name = request.POST.get('topic')
-        topic, created = Topic.objects.get_or_create(name=topic_name)
-        BlogPost.objects.create(
-            host=request.user,
-            topic=topic,
-            name=request.POST.get('name'),
-            description=request.POST.get('description'),
-        )
-    # if request.method == 'POST':
-    #     form = RoomForm(request.POST)
-    #     if form.is_valid:
-    #         room = form.save(commit=False)
-    #         room.host= request.user
-    #         form.save()
-        return redirect('/')
+# @login_required(login_url='/login')
+# def createBlog(request):
+#     # form = RoomForm(request.POST)
+#     topics = Topic.objects.all()
+#     form = BlogPostForm()
+#     if request.method == 'POST':
+#         topic_name = request.POST.get('topic')
+#         topic, created = Topic.objects.get_or_create(name=topic_name)
+#         BlogPost.objects.create(
+#             host=request.user,
+#             topic=topic,
+#             name=request.POST.get('name'),
+#             description=request.POST.get('description'),
+#         )
+#     # if request.method == 'POST':
+#     #     form = RoomForm(request.POST)
+#     #     if form.is_valid:
+#     #         room = form.save(commit=False)
+#     #         room.host= request.user
+#     #         form.save()
+#         return redirect('/')
 
-    context = {'topics': topics, 'form': form}
-    return render(request, 'blog/blog_create.html', context)
+#     context = {'topics': topics, 'form': form}
+#     return render(request, 'blog/blog_create.html', context)

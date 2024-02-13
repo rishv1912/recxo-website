@@ -1,3 +1,42 @@
-<h1>blog.author</h1>
-<h1>blog.name</h1>
-<h1>blog.content</h1>
+{% block title %} BlogPost-icoder{%endblock title %} {% block blogactive %}active{% endblock blogactive %} {% block body %} 
+
+{% block js %}
+<script>
+   let previews=document.getElementsByClassName('preview');
+  Array.from(previews).forEach((element)=>{element.innerHTML=element.innerText;}) 
+      
+</script>
+{% endblock js %}
+{%load humanize %} {% load extras %} {% load static %} 
+{% if messages %}
+{% for message in messages %}
+<div
+  class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 "
+  role="alert"
+>
+  <strong> {{ message }} </strong>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+{% endfor %} {% endif %}
+
+<div class="container my-1">
+  <h1>
+    <a href="{%  url 'blog'%}">Back</a>
+  </h1>
+</div>
+
+<div class="container my-3">
+  <h2 class="blog-post-title">{{post.title}}</h2>
+  <p class="blog-post-meta">
+    {{post.timestamp}} by <a href="#">{{post.author}}</a>(<span>{{post.views}} views</span>)
+  </p>
+  <p>{{post.content|safe}}</p>
+  <hr />
+</div>
+
+{% endblock body %}
