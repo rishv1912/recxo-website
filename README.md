@@ -75,8 +75,6 @@ Admin for controling the site
 >You can access by link [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 ![alt](static/img/recxo-admin-login.png)
 
-Username : recxo  
-Password : recxo098
 >Username and password is for testing purpose so it can be changed in future so revisit to check it
 
 ## Admin Preview
