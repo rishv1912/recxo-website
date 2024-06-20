@@ -6,13 +6,13 @@ recxo has been built in django a python framework.
 ### Cloning the repository
 --> Clone the repostiory using the command below:
 ``` 
-git clone https://github.com/rishv1912/RECXO.git
+git clone https://github.com/rishv1912/recxo-website.git
 ```
 
 --> Move into the directory where we have the project file:
 
 ```
-cd RECXO
+cd recxo-website
 ```
 
 --> Create a virtual environment:
